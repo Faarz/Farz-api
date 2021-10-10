@@ -1098,7 +1098,7 @@ router.get('/randomquote', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'FarZ') return res.sendFile(__path + '/views/eror.html')
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/FarZ/database-api/main/fun/quote.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/YuzzuKamiyaka/database-api/main/fun/quote.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -2629,7 +2629,7 @@ router.get('/kuis/caklontong', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'FarZ') return res.sendFile(__path + '/views/eror.html')
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/FarZ/database-api/main/fun/caklontong.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/YuzzuKamiyaka/database-api/main/fun/caklontong.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
@@ -2650,7 +2650,7 @@ router.get('/kuis/tebakgambar', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'FarZ') return res.sendFile(__path + '/views/eror.html')
 
-       fetch(encodeURI(`https://raw.githubusercontent.com/FarZ/database-api/main/fun/tebakgambar.json`))
+       fetch(encodeURI(`https://raw.githubusercontent.com/YuzzuKamiyaka/database-api/main/fun/tebakgambar.json`))
         .then(response => response.json())
         .then(data => {
         var result = data;
